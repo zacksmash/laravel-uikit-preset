@@ -1,0 +1,21 @@
+{
+  "name": "zacksmash/laravel-uikit-preset",
+  "description": "Laravel Front-end preset for UIkit CSS Framework",
+  "keywords": ["laravel", "preset", "uikit", "getuikit"],
+  "license": "MIT",
+  "require": {
+    "laravel/framework": "^5.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Zacksmash\\LaravelPreset\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Zacksmash\\LaravelPreset\\UIkitPresetServiceProvider"
+      ]
+    }
+  }
+}
