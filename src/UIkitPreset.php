@@ -42,7 +42,7 @@ class UIkitPreset extends BasePreset
         copy(__DIR__ . '/stubs/editorconfig', base_path('.editorconfig'));
     }
 
-    protected static function updatePackageArray(array $packages)
+    protected static function updatePackageArray()
     {
         (new Filesystem)->delete(base_path('package.json'));
         (new Filesystem)->delete(base_path('package-lock.json'));
