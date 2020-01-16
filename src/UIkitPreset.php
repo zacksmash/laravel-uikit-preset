@@ -7,7 +7,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Foundation\Console\Presets\Preset as BasePreset;
 
-class Preset extends BasePreset
+class UIkitPreset extends BasePreset
 {
     /**
      * Install the preset.
