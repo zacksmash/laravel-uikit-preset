@@ -17,7 +17,7 @@ class UIkitPreset extends BasePreset
     public static function install($withAuth = false)
     {
         static::ensureComponentDirectoryExists();
-        static::updatePackages();
+        static::updatePackageArray();
         static::updateSass();
         static::updateWebpackConfiguration();
         static::updateJavaScript();
@@ -44,37 +44,26 @@ class UIkitPreset extends BasePreset
 
     protected static function updatePackageArray(array $packages)
     {
-        return array_merge([
-            'browser-sync' => '^2.26.7',
-            'browser-sync-webpack-plugin' => '^2.2.2',
-            'laravel-mix-auto-extract' => '^1.0.1',
-            'laravel-mix' => '^3.0',
-            'cross-env' => '^5.2',
-            'uikit' => '^3.2.7'
-        ], Arr::except($packages, [
-            'bootstrap',
-            'bootstrap-sass',
-            'popper.js',
-            'axios',
-            'lodash',
-            'resolve-url-loader',
-            'sass',
-            'sass-loader'
-        ]));
+        (new Filesystem)->delete(base_path('package.json'));
+        (new Filesystem)->delete(base_path('package-lock.json'));
+        copy(__DIR__ . '/stubs/package.json', base_path('package.json'));
     }
 
     protected static function updateSass()
     {
-        copy(__DIR__ . '/stubs/sass', resource_path('sass'));
+        (new Filesystem)->deleteDirectory(resource_path('sass'));
+        (new Filesystem)->copyDirectory(__DIR__ . '/stubs/sass', resource_path('sass'));
     }
 
     protected static function updateJavaScript()
     {
-        copy(__DIR__ . '/stubs/js', resource_path('js'));
+        (new Filesystem)->deleteDirectory(resource_path('js'));
+        (new Filesystem)->copyDirectory(__DIR__ . '/stubs/js', resource_path('js'));
     }
 
     protected static function updateTemplates()
     {
-        copy(__DIR__ . '/stubs/views', resource_path('views'));
+        (new Filesystem)->deleteDirectory(resource_path('views'));
+        (new Filesystem)->copyDirectory(__DIR__ . '/stubs/views', resource_path('views'));
     }
 }
