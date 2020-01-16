@@ -17,14 +17,14 @@ class UIkitPreset extends BasePreset
     public static function install($withAuth = false)
     {
         static::ensureComponentDirectoryExists();
-        static::updatePackageArray();
-        static::updateSass();
-        static::updateWebpackConfiguration();
-        static::updateJavaScript();
-        static::updateTemplates();
         static::removeNodeModules();
+        static::updateWebpackConfiguration();
         static::updateGitignore();
         static::updateEditorConfig();
+        static::updatePackages();
+        static::updateSass();
+        static::updateJavaScript();
+        static::updateTemplates();
     }
 
     protected static function updateWebpackConfiguration()
@@ -42,7 +42,7 @@ class UIkitPreset extends BasePreset
         copy(__DIR__ . '/stubs/editorconfig', base_path('.editorconfig'));
     }
 
-    protected static function updatePackageArray()
+    protected static function updatePackages()
     {
         (new Filesystem)->delete(base_path('package.json'));
         (new Filesystem)->delete(base_path('package-lock.json'));
