@@ -5,7 +5,7 @@ namespace Zacksmash\LaravelPreset;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\Console\PresetCommand;
 
-class PresetServiceProvider extends ServiceProvider
+class UIkitPresetServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
