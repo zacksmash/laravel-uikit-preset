@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+const mix         = require('laravel-mix');
 const localDomain = 'airlock.test';
 require('laravel-mix-auto-extract');
 

@@ -15,8 +15,14 @@ class UIkitPresetServiceProvider extends ServiceProvider
     public function boot()
     {
         PresetCommand::macro('uikit', function ($command) {
-            UIkitPreset::install(false);
+            UIkitPreset::install();
             $command->info('UIkit scaffolding installed successfully.');
+            $command->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
+        });
+
+        PresetCommand::macro('uikit-auth', function ($command) {
+            UIkitAuthPreset::install();
+            $command->info('UIkit auth scaffolding installed successfully.');
             $command->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
         });
     }
