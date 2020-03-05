@@ -3,7 +3,7 @@
 namespace Zacksmash\LaravelPreset;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Foundation\Console\PresetCommand;
+use Laravel\Ui\UiCommand;
 
 class UIkitPresetServiceProvider extends ServiceProvider
 {
@@ -14,13 +14,13 @@ class UIkitPresetServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        PresetCommand::macro('uikit', function ($command) {
+        UiCommand::macro('uikit', function ($command) {
             UIkitPreset::install();
             $command->info('UIkit scaffolding installed successfully.');
             $command->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
         });
 
-        PresetCommand::macro('uikit-auth', function ($command) {
+        UiCommand::macro('uikit-auth', function ($command) {
             UIkitAuthPreset::install();
             $command->info('UIkit auth scaffolding installed successfully.');
             $command->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');

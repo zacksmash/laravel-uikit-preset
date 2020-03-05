@@ -2,10 +2,8 @@
 
 namespace Zacksmash\LaravelPreset;
 
-use Artisan;
-use Illuminate\Support\Arr;
 use Illuminate\Filesystem\Filesystem;
-use Illuminate\Foundation\Console\Presets\Preset as BasePreset;
+use Laravel\Ui\Presets\Preset as BasePreset;
 
 class UIkitAuthPreset extends BasePreset
 {
