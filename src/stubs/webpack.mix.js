@@ -1,30 +1,40 @@
-const mix         = require('laravel-mix');
-const localDomain = 'airlock.test';
+const mix = require('laravel-mix');
 require('laravel-mix-auto-extract');
 
-/*
- |--------------------------------------------------------------------------
- | Mix Asset Management
- |--------------------------------------------------------------------------
- |
- | Mix provides a clean, fluent API for defining some Webpack build steps
- | for your Laravel application. By default, we are compiling the Sass
- | file for the application as well as bundling up all the JS files.
- |
- */
+// Set project paths
+const localDomain = 'http://laravel.test';
 
 mix
+  // Add global libraries
+  .autoload({
+    jquery: ['$', 'jQuery'],
+    uikit: 'UIkit'
+  })
+
+  .setPublicPath('public')
+
+  // Suppress success messages
   .disableSuccessNotifications()
-  .autoload({ uikit: 'UIkit' })
+
+  // Compile Javascript (ES6)
   .js('resources/js/app.js', 'public/js')
-  .standaloneSass('resources/sass/app.scss', 'public/css', {
+
+  // Compile Sass
+  .standaloneSass('resources/scss/app.scss', 'public/css', {
     includedPaths: ['node_modules']
   })
+
+  // .copy('resources/img', 'public/img')
+  // .copy('resources/fonts', 'public/fonts')
+
+  // Utilities
   .sourceMaps()
   .autoExtract()
+
+  // Setup BrowserSync
   .browserSync({
-    proxy: 'http://' + localDomain,
-    host: localDomain,
+    proxy: localDomain,
+    host: localDomain.replace(/^https?:\/\//, ''),
     notify: false,
     open: false,
     injectChanges: true,
@@ -34,6 +44,7 @@ mix
     // }
   })
 
+// Setup versioning (cache-busting)
 if (mix.inProduction()) {
-  mix.version();
+  mix.version()
 }

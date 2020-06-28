@@ -63,7 +63,7 @@ class UIkitAuthPreset extends BasePreset
   protected static function updateSass()
   {
     (new Filesystem)->deleteDirectory(resource_path('sass'));
-    (new Filesystem)->copyDirectory(__DIR__ . '/stubs/base/sass', resource_path('sass'));
+    (new Filesystem)->copyDirectory(__DIR__ . '/stubs/base/scss', resource_path('scss'));
   }
 
   protected static function updateJavaScript()
