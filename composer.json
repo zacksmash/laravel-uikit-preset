@@ -5,13 +5,13 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Zacksmash\\LaravelPreset\\": "src/"
+      "Zacksmash\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Zacksmash\\LaravelPreset\\UIkitPresetServiceProvider"
+        "Zacksmash\\UIkitPresetServiceProvider"
       ]
     }
   }
