@@ -1,6 +1,6 @@
 <?php
 
-namespace Zacksmash\UIkitPresetServiceProvider;
+namespace Zacksmash\LaravelPreset;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Ui\UiCommand;

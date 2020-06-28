@@ -1,6 +1,6 @@
 <?php
 
-namespace Zacksmash\UIkitPreset;
+namespace Zacksmash\LaravelPreset;
 
 use Illuminate\Filesystem\Filesystem;
 use Laravel\Ui\Presets\Preset as BasePreset;
