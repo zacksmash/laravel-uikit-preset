@@ -32,7 +32,11 @@ class UIkitPreset extends Preset
             'js-dom-router' => '^1.0.0',
             'jquery' => '^3.5.0',
             'uikit' => '^3.5.0'
-        ]);
+        ], Arr::except($packages, [
+            'bootstrap',
+            'bootstrap-sass',
+            'popper.js'
+        ]));
     }
 
     protected static function updateAssets()
