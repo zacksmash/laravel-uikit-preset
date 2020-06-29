@@ -12,7 +12,7 @@ const mix = require('laravel-mix');
  */
 
 // Set project paths
-const localDomain = 'http://CHANGE-ME.test';
+const localDomain = 'http://CHANGE_ME.test';
 
 mix
   // Add global libraries
