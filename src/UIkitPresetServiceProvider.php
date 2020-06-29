@@ -12,12 +12,12 @@ class UIkitPresetServiceProvider extends ServiceProvider
     public function boot()
     {
         UiCommand::macro('uikit', function ($command) {
-            UIkitPreset::install();
+            UIkitPreset::install($command);
 
             $command->info('UIkit CSS scaffolding installed successfully.');
 
             if ($command->option('auth')) {
-                UIkitPreset::installAuth();
+                UIkitPreset::installAuth($command);
 
                 $command->info('UIkit CSS auth scaffolding installed successfully.');
             }

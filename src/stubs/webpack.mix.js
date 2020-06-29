@@ -1,8 +1,18 @@
 const mix = require('laravel-mix');
-require('laravel-mix-auto-extract');
+
+/*
+ |--------------------------------------------------------------------------
+ | Mix Asset Management
+ |--------------------------------------------------------------------------
+ |
+ | Mix provides a clean, fluent API for defining some Webpack build steps
+ | for your Laravel application. By default, we are compiling the Sass
+ | file for the application as well as bundling up all the JS files.
+ |
+ */
 
 // Set project paths
-const localDomain = 'http://laravel.test';
+const localDomain = 'http://CHANGE-ME.test';
 
 mix
   // Add global libraries
@@ -11,25 +21,23 @@ mix
     uikit: 'UIkit'
   })
 
-  .setPublicPath('public')
-
   // Suppress success messages
   .disableSuccessNotifications()
 
   // Compile Javascript (ES6)
-  .js('resources/js/app.js', 'public/js')
+  .js('resources/js/app.js', 'public/js').extract()
 
   // Compile Sass
-  .standaloneSass('resources/scss/app.scss', 'public/css', {
-    includedPaths: ['node_modules']
-  })
+  .sass('resources/scss/app.scss', 'public/css')
 
   // .copy('resources/img', 'public/img')
   // .copy('resources/fonts', 'public/fonts')
 
   // Utilities
   .sourceMaps()
-  .autoExtract()
+  .options({
+    processCssUrls: false
+  })
 
   // Setup BrowserSync
   .browserSync({

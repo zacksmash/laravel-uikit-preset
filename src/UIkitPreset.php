@@ -11,9 +11,13 @@ use Symfony\Component\Finder\SplFileInfo;
 
 class UIkitPreset extends Preset
 {
-    public static function install()
+    private static $command;
+
+    public static function install($command)
     {
+        static::$command = $command;
         static::updatePackages();
+        static::updatePackages(false);
         static::updateAssets();
         static::updateBootstrapping();
         static::updateWelcomePage();
@@ -21,25 +25,43 @@ class UIkitPreset extends Preset
         static::removeNodeModules();
     }
 
-    public static function installAuth()
+    public static function installAuth($command)
     {
+        static::$command = $command;
         static::scaffoldController();
         static::scaffoldAuth();
     }
 
-    protected static function updatePackageArray(array $packages)
+    protected static function updatePackageArray(array $packages, string $key)
     {
-        return array_merge([
-            'js-dom-router' => '^1.0.0',
-            'jquery' => '^3.5.0',
-            'uikit' => '^3.5.0'
-        ], Arr::except($packages, [
-            'bootstrap',
-            'bootstrap-sass',
-            'popper.js',
-            'laravel-mix',
-            'jquery',
-        ]));
+        if (file_exists(base_path('package-lock.json'))) {
+            unlink(base_path('package-lock.json'));
+        }
+
+        if ($key == 'devDependencies') {
+            static::$command->info('dev deps');
+
+            return array_merge([
+                'laravel-mix' => '^5.0.1'
+            ], Arr::except($packages, [
+                'axios',
+                'bootstrap',
+                'bootstrap-sass',
+                'popper.js',
+                'lodash',
+                'laravel-mix',
+            ]));
+        }
+
+        if ($key == 'dependencies') {
+            static::$command->info('deps');
+
+            return [
+                'js-dom-router' => '^1.0.0',
+                'jquery' => '^3.5.0',
+                'uikit' => '^3.5.0'
+            ];
+        }
     }
 
     protected static function updateAssets()
@@ -105,7 +127,7 @@ class UIkitPreset extends Preset
 
         file_put_contents(
             base_path('routes/web.php'),
-            "\nAuth::routes();\n\nRoute::get('/home', 'HomeController@index')->name('home');\n\n",
+            "\n\nAuth::routes();\n\nRoute::get('/home', 'HomeController@index')->name('home');\n\n",
             FILE_APPEND
         );
 
