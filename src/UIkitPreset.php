@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelFrontendPresets\UIkitPreset;
+namespace Zacksmash\UIkitPreset;
 
 use Illuminate\Support\Str;
 use Illuminate\Container\Container;
