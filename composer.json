@@ -9,7 +9,6 @@
   ],
   "license": "MIT",
   "require": {
-    "laravel/framework": "^7.0",
     "laravel/ui": "^2.0"
   },
   "autoload": {
