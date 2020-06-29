@@ -36,7 +36,9 @@ class UIkitPreset extends Preset
         ], Arr::except($packages, [
             'bootstrap',
             'bootstrap-sass',
-            'popper.js'
+            'popper.js',
+            'laravel-mix',
+            'jquery',
         ]));
     }
 
