@@ -2,6 +2,7 @@
 
 namespace Zacksmash\UIkitPreset;
 
+use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Illuminate\Container\Container;
 use Illuminate\Filesystem\Filesystem;
