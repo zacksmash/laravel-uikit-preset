@@ -69,7 +69,6 @@ $global-danger-background: #f0506e !default;
 //
 $global-border-width: 1px !default;
 $global-border: #e5e5e5 !default;
-$border-rounded-border-radius: 5px !default;
 
 //
 // Box-Shadows
@@ -120,17 +119,4 @@ $inverse-global-primary-background: $global-inverse-color !default;
 $inverse-global-muted-background: rgba($global-inverse-color, 0.1) !default;
 $inverse-global-border: rgba($global-inverse-color, 0.2) !default;
 
-//@mixin hook-inverse-component-link(){}
-//@mixin hook-inverse-component-list(){}
-//@mixin hook-inverse-component-totop(){}
-//@mixin hook-inverse-component-label(){}
-//@mixin hook-inverse-component-search(){}
-//@mixin hook-inverse-component-nav(){}
-//@mixin hook-inverse-component-navbar(){}
-//@mixin hook-inverse-component-subnav(){}
-//@mixin hook-inverse-component-pagination(){}
-//@mixin hook-inverse-component-tab(){}
-//@mixin hook-inverse-component-slidenav(){}
-//@mixin hook-inverse-component-text(){}
-//@mixin hook-inverse-component-utility(){}
 //@mixin hook-inverse(){}
