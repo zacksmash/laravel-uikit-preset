@@ -39,8 +39,6 @@ class UIkitPreset extends Preset
         }
 
         if ($key == 'devDependencies') {
-            static::$command->info('dev deps');
-
             return array_merge([
                 'laravel-mix' => '^5.0.1'
             ], Arr::except($packages, [
@@ -54,8 +52,6 @@ class UIkitPreset extends Preset
         }
 
         if ($key == 'dependencies') {
-            static::$command->info('deps');
-
             return [
                 'js-dom-router' => '^1.0.0',
                 'jquery' => '^3.5.0',
