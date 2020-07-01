@@ -15,6 +15,12 @@ const mix = require('laravel-mix');
 const localDomain = 'http://CHANGE_ME.test';
 
 mix
+  // Utilities
+  .sourceMaps()
+  .options({
+    processCssUrls: false
+  })
+
   // Add global libraries
   .autoload({
     jquery: ['$', 'jQuery'],
@@ -32,12 +38,6 @@ mix
 
   // .copy('resources/img', 'public/img')
   // .copy('resources/fonts', 'public/fonts')
-
-  // Utilities
-  .sourceMaps()
-  .options({
-    processCssUrls: false
-  })
 
   // Setup BrowserSync
   .browserSync({
