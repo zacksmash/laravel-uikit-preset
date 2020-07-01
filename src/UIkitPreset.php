@@ -53,8 +53,8 @@ class UIkitPreset extends Preset
 
         if ($key == 'dependencies') {
             return [
+                'jquery' => '^3.5.1',
                 'js-dom-router' => '^1.0.0',
-                'jquery' => '^3.5.0',
                 'uikit' => '^3.5.0'
             ];
         }
