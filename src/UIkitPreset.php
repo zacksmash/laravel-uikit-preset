@@ -123,7 +123,7 @@ class UIkitPreset extends Preset
 
         file_put_contents(
             base_path('routes/web.php'),
-            "\n\nAuth::routes();\n\nRoute::get('/home', 'HomeController@index')->name('home');\n\n",
+            "\nAuth::routes();\n\nRoute::get('/home', 'HomeController@index')->name('home');\n\n",
             FILE_APPEND
         );
 
