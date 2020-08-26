@@ -1,4 +1,4 @@
-//region   Accordion
+//|>   Accordion
 
 //$accordion-item-margin-top: $global-margin;
 //$accordion-title-font-size: $global-medium-font-size;
@@ -19,9 +19,9 @@
 //@mixin hook-inverse-accordion-title() {}
 //@mixin hook-inverse-accordion-title-hover() {}
 
-//endregion
+//<|
 
-//region   Alert
+//|>   Alert
 
 //$alert-margin-vertical: $global-margin;
 //$alert-padding: $global-small-gutter;
@@ -48,9 +48,9 @@
 //@mixin hook-alert-danger() {}
 //@mixin hook-alert-misc() {}
 
-//endregion
+//<|
 
-//region   Align
+//|>   Align
 
 //$align-margin-horizontal: $global-gutter;
 //$align-margin-vertical: $global-gutter;
@@ -58,9 +58,9 @@
 
 //@mixin hook-align-misc() {}
 
-//endregion
+//<|
 
-//region   Animation
+//|>   Animation
 
 //$animation-duration: 0.5s;
 //$animation-fade-duration: 0.8s;
@@ -72,9 +72,9 @@
 
 //@mixin hook-animation-misc() {}
 
-//endregion
+//<|
 
-//region   Article
+//|>   Article
 
 //$article-margin-top: $global-large-margin;
 //$article-title-font-size-m: $global-2xlarge-font-size;
@@ -93,9 +93,9 @@
 //@mixin hook-inverse-article-title() {}
 //@mixin hook-inverse-article-meta() {}
 
-//endregion
+//<|
 
-//region   Background
+//|>   Background
 
 //$background-default-background: $global-background;
 //$background-muted-background: $global-muted-background;
@@ -104,9 +104,9 @@
 
 //@mixin hook-background-misc() {}
 
-//endregion
+//<|
 
-//region   Badge
+//|>   Badge
 
 //$badge-size: 22px;
 //$badge-padding-vertical: 0;
@@ -126,9 +126,9 @@
 //@mixin hook-inverse-badge() {}
 //@mixin hook-inverse-badge-hover() {}
 
-//endregion
+//<|
 
-//region   Base
+//|>   Base
 
 //$base-body-background: $global-background;
 //$base-body-font-family: $global-font-family;
@@ -226,9 +226,9 @@
 //@mixin hook-inverse-base-blockquote-footer() {}
 //@mixin hook-inverse-base-hr() {}
 
-//endregion
+//<|
 
-//region   Box Shadow
+//|>   Box Shadow
 
 //$box-shadow-duration: 0.1s;
 //$box-shadow-bottom-height: 30px;
@@ -238,9 +238,9 @@
 
 //@mixin hook-box-shadow-bottom() {}
 
-//endregion
+//<|
 
-//region   Breadcrumb
+//|>   Breadcrumb
 
 //$breadcrumb-item-font-size: $global-small-font-size;
 //$breadcrumb-item-color: $global-muted-color;
@@ -268,9 +268,9 @@
 //@mixin hook-inverse-breadcrumb-item-active() {}
 //@mixin hook-inverse-breadcrumb-divider() {}
 
-//endregion
+//<|
 
-//region   Button
+//|>   Button
 
 //$button-line-height: $global-control-height;
 //$button-small-line-height: $global-control-small-height;
@@ -378,15 +378,15 @@
 //@mixin hook-inverse-button-text-disabled() {}
 //@mixin hook-inverse-button-link() {}
 
-//endregion
+//<|
 
-//region   Border
+//|>   Border
 
 //$border-rounded-border-radius: 5px;
 
-//endregion
+//<|
 
-//region   Card
+//|>   Card
 
 //$card-body-padding-horizontal: $global-gutter;
 //$card-body-padding-vertical: $global-gutter;
@@ -457,9 +457,9 @@
 //@mixin hook-card-secondary-hover() {}
 //@mixin hook-card-misc() {}
 
-//endregion
+//<|
 
-//region   Close
+//|>   Close
 
 //$close-color: $global-muted-color;
 //$close-hover-color: $global-color;
@@ -472,9 +472,9 @@
 //@mixin hook-inverse-close() {}
 //@mixin hook-inverse-close-hover() {}
 
-//endregion
+//<|
 
-//region   Column
+//|>   Column
 
 //$column-gutter: $global-gutter;
 //$column-gutter-l: $global-medium-gutter;
@@ -484,9 +484,9 @@
 
 //@mixin hook-column-misc() {}
 
-//endregion
+//<|
 
-//region   Comment
+//|>   Comment
 
 //$comment-header-margin-bottom: $global-margin;
 //$comment-title-font-size: $global-medium-font-size;
@@ -510,9 +510,9 @@
 //@mixin hook-comment-primary() {}
 //@mixin hook-comment-misc() {}
 
-//endregion
+//<|
 
-//region   Container
+//|>   Container
 
 //$container-max-width: 1200px;
 //$container-xsmall-max-width: 750px;
@@ -524,9 +524,9 @@
 
 //@mixin hook-container-misc() {}
 
-//endregion
+//<|
 
-//region   Countdown
+//|>   Countdown
 
 //$countdown-item-line-height: 0.8
 //$countdown-number-font-size: 2rem;
@@ -548,15 +548,15 @@
 //@mixin hook-inverse-countdown-separator() {}
 //@mixin hook-inverse-countdown-label() {}
 
-//endregion
+//<|
 
-//region   Cover
+//|>   Cover
 
 //@mixin hook-cover-misc() {}
 
-//endregion
+//<|
 
-//region   Description
+//|>   Description
 
 //$description-list-term-color: $global-emphasis-color;
 //$description-list-term-margin-top: $global-margin;
@@ -569,9 +569,9 @@
 //@mixin hook-description-list-divider-term() {}
 //@mixin hook-description-list-misc() {}
 
-//endregion
+//<|
 
-//region   Divider
+//|>   Divider
 
 //$divider-margin-vertical: $global-margin;
 //$divider-icon-width: 50px;
@@ -605,9 +605,9 @@
 //@mixin hook-inverse-divider-small() {}
 //@mixin hook-inverse-divider-vertical() {}
 
-//endregion
+//<|
 
-//region   Dotnav
+//|>   Dotnav
 
 //$dotnav-margin-horizontal: 12px;
 //$dotnav-margin-vertical: $dotnav-margin-horizontal;
@@ -634,9 +634,9 @@
 //@mixin hook-inverse-dotnav-item-onclick() {}
 //@mixin hook-inverse-dotnav-item-active() {}
 
-//endregion
+//<|
 
-//region   Drop Cap
+//|>   Drop Cap
 
 //$dropcap-margin-right: 10px;
 //$dropcap-font-size: (($global-line-height * 3) * 1em);
@@ -644,9 +644,9 @@
 //@mixin hook-dropcap(){}
 //@mixin hook-inverse-dropcap(){}
 
-//endregion
+//<|
 
-//region   Drop
+//|>   Drop
 
 //$drop-z-index: $global-z-index + 20;
 //$drop-width: 300px;
@@ -654,9 +654,9 @@
 
 //@mixin hook-drop-misc() {}
 
-//endregion
+//<|
 
-//region   Dropdown
+//|>   Dropdown
 
 //$dropdown-z-index: $global-z-index + 20;
 //$dropdown-min-width: 200px;
@@ -680,9 +680,9 @@
 //@mixin hook-dropdown-nav-divider() {}
 //@mixin hook-dropdown-misc() {}
 
-//endregion
+//<|
 
-//region   Form
+//|>   Form
 
 //$form-height: $global-control-height;
 //$form-line-height: $form-height;
@@ -778,9 +778,9 @@
 //@mixin hook-inverse-form-radio-checked-focus() {}
 //@mixin hook-inverse-form-label() {}
 
-//endregion
+//<|
 
-//region   Form Range
+//|>   Form Range
 
 //$form-range-thumb-height: 15px;
 //$form-range-thumb-border-radius: 500px;
@@ -795,9 +795,9 @@
 // @mixin hook-form-range-track-focus(){}
 // @mixin hook-form-range-misc(){}
 
-//endregion
+//<|
 
-//region   Grid
+//|>   Grid
 
 //$grid-gutter-horizontal: $global-gutter;
 //$grid-gutter-vertical: $grid-gutter-horizontal;
@@ -817,9 +817,9 @@
 
 //@mixin hook-grid-misc() {}
 
-//endregion
+//<|
 
-//region   Grid Masonry
+//|>   Grid Masonry
 
 //$grid-column-xsmall: 100px;
 //$grid-column-small: 200px;
@@ -831,9 +831,9 @@
 //$grid-gap-medium: $global-gutter;
 //$grid-gap-large: $global-large-gutter;
 
-//endregion
+//<|
 
-//region   Heading
+//|>   Heading
 
 //$heading-small-font-size: $heading-small-font-size-m * 0.8;
 //$heading-medium-font-size: $heading-medium-font-size-m * 0.825;
@@ -883,9 +883,9 @@
 //@mixin hook-inverse-heading-bullet(){}
 //@mixin hook-inverse-heading-line(){}
 
-//endregion
+//<|
 
-//region   Height
+//|>   Height
 
 //$height-small-height: 150px;
 //$height-medium-height: 300px;
@@ -893,9 +893,9 @@
 
 //@mixin hook-height-misc() {}
 
-//endregion
+//<|
 
-//region   Icon
+//|>   Icon
 
 //$icon-image-size: 20px;
 //$icon-link-color: $global-muted-color;
@@ -933,9 +933,9 @@
 //@mixin hook-inverse-icon-button-hover() {}
 //@mixin hook-inverse-icon-button-active() {}
 
-//endregion
+//<|
 
-//region   Iconnav
+//|>   Iconnav
 
 //$iconnav-margin-horizontal: $global-small-margin;
 //$iconnav-margin-vertical: $iconnav-margin-horizontal;
@@ -955,9 +955,9 @@
 //@mixin hook-inverse-iconnav-item-hover() {}
 //@mixin hook-inverse-iconnav-item-active() {}
 
-//endregion
+//<|
 
-//region   Label
+//|>   Label
 
 //$label-padding-vertical: 0;
 //$label-padding-horizontal: $global-small-margin;
@@ -981,9 +981,9 @@
 //@mixin hook-label-misc() {}
 //@mixin hook-inverse-label() {}
 
-//endregion
+//<|
 
-//region   Leader
+//|>   Leader
 
 //$leader-fill-content: unquote('.');
 //$leader-fill-margin-left: $global-small-gutter;
@@ -992,9 +992,9 @@
 //@mixin hook-leader-misc() {}
 //@mixin hook-inverse-leader() {}
 
-//endregion
+//<|
 
-//region   Lightbox
+//|>   Lightbox
 
 //$lightbox-z-index: $global-z-index + 10;
 //$lightbox-background: #000;
@@ -1022,9 +1022,9 @@
 //@mixin hook-lightbox-button-hover() {}
 //@mixin hook-lightbox-misc() {}
 
-//endregion
+//<|
 
-//region   Link
+//|>   Link
 
 //$link-muted-color: $global-muted-color;
 //$link-muted-hover-color: $global-color;
@@ -1049,9 +1049,9 @@
 //@mixin hook-inverse-link-text-hover() {}
 //@mixin hook-inverse-link-heading-hover() {}
 
-//endregion
+//<|
 
-//region   List
+//|>   List
 
 //$list-margin-top: $global-small-margin;
 //$list-padding-left: 30px;
@@ -1088,9 +1088,9 @@
 //@mixin hook-inverse-list-striped() {}
 //@mixin hook-inverse-list-bullet() {}
 
-//endregion
+//<|
 
-//region   Logo
+//|>   Logo
 
 //$logo-font-size: $global-large-font-size;
 //$logo-font-family: $global-font-family;
@@ -1104,9 +1104,9 @@
 //@mixin hook-inverse-logo() {}
 //@mixin hook-inverse-logo-hover() {}
 
-//endregion
+//<|
 
-//region   Margin
+//|>   Margin
 
 //$margin-margin: $global-margin;
 //$margin-small-margin: $global-small-margin;
@@ -1118,9 +1118,9 @@
 
 //@mixin hook-margin-misc() {}
 
-//endregion
+//<|
 
-//region   Marker
+//|>   Marker
 
 //$marker-padding: 5px;
 //$marker-background: $global-secondary-background;
@@ -1136,9 +1136,9 @@
 //@mixin hook-inverse-marker() {}
 //@mixin hook-inverse-marker-hover() {}
 
-//endregion
+//<|
 
-//region   Modal
+//|>   Modal
 
 //$modal-z-index: $global-z-index + 10;
 //$modal-background: rgba(0,0,0,0.6);
@@ -1184,9 +1184,9 @@
 //@mixin hook-modal-close-full-hover() {}
 //@mixin hook-modal-misc() {}
 
-//endregion
+//<|
 
-//region   Nav
+//|>   Nav
 
 //$nav-item-padding-vertical: 5px;
 //$nav-item-padding-horizontal: 0;
@@ -1273,9 +1273,9 @@
 //@mixin hook-inverse-nav-primary-header(){}
 //@mixin hook-inverse-nav-primary-divider(){}
 
-//endregion
+//<|
 
-//region   Navbar
+//|>   Navbar
 
 //$navbar-background: $global-muted-background;
 //$navbar-color-mode: none;
@@ -1354,9 +1354,9 @@
 //@mixin hook-inverse-navbar-toggle(){}
 //@mixin hook-inverse-navbar-toggle-hover(){}
 
-//endregion
+//<|
 
-//region   Notification
+//|>   Notification
 
 //$notification-position: 10px;
 //$notification-z-index: $global-z-index + 40;
@@ -1383,9 +1383,9 @@
 //@mixin hook-notification-message-danger() {}
 //@mixin hook-notification-misc() {}
 
-//endregion
+//<|
 
-//region   Offcanvas
+//|>   Offcanvas
 
 //$offcanvas-z-index: $global-z-index;
 //$offcanvas-bar-width: 270px;
@@ -1405,9 +1405,9 @@
 //@mixin hook-offcanvas-overlay() {}
 //@mixin hook-offcanvas-misc() {}
 
-//endregion
+//<|
 
-//region   Overlay
+//|>   Overlay
 
 //$overlay-padding-horizontal: $global-gutter;
 //$overlay-padding-vertical: $global-gutter;
@@ -1421,9 +1421,9 @@
 //@mixin hook-overlay-primary() {}
 //@mixin hook-overlay-misc() {}
 
-//endregion
+//<|
 
-//region   Padding
+//|>   Padding
 
 //$padding-padding: $global-gutter;
 //$padding-padding-l: $global-medium-gutter;
@@ -1433,9 +1433,9 @@
 
 //@mixin hook-padding-misc() {}
 
-//endregion
+//<|
 
-//region   Pagination
+//|>   Pagination
 
 //$pagination-margin-horizontal: 20px;
 //$pagination-item-color: $global-muted-color;
@@ -1459,9 +1459,9 @@
 //@mixin hook-inverse-pagination-item-active() {}
 //@mixin hook-inverse-pagination-item-disabled() {}
 
-//endregion
+//<|
 
-//region   Panel
+//|>   Panel
 
 //$panel-scrollable-height: 170px;
 //$panel-scrollable-padding: 10px;
@@ -1470,9 +1470,9 @@
 
 //@mixin hook-panel-scrollable() {}
 
-//endregion
+//<|
 
-//region   Placeholder
+//|>   Placeholder
 
 //$placeholder-margin-vertical: $global-margin;
 //$placeholder-padding-vertical: $global-gutter;
@@ -1482,9 +1482,9 @@
 //@mixin hook-placeholder() {}
 //@mixin hook-placeholder-misc() {}
 
-//endregion
+//<|
 
-//region   Position
+//|>   Position
 
 //$position-small-margin: $global-small-gutter;
 //$position-medium-margin: $global-gutter;
@@ -1493,15 +1493,15 @@
 
 //@mixin hook-position-misc() {}
 
-//endregion
+//<|
 
-//region   Print
+//|>   Print
 
 //@mixin hook-print() {}
 
-//endregion
+//<|
 
-//region   Progress
+//|>   Progress
 
 //$progress-height: 15px;
 //$progress-margin-vertical: $global-margin;
@@ -1512,9 +1512,9 @@
 //@mixin hook-progress-bar() {}
 //@mixin hook-progress-misc() {}
 
-//endregion
+//<|
 
-//region   Search
+//|>   Search
 
 //$search-color: $global-color;
 //$search-placeholder-color: $global-muted-color;
@@ -1562,9 +1562,9 @@
 //@mixin hook-inverse-search-toggle(){}
 //@mixin hook-inverse-search-toggle-hover(){}
 
-//endregion
+//<|
 
-//region   Section
+//|>   Section
 
 //$section-padding-vertical: $global-medium-margin;
 //$section-padding-vertical-m: $global-large-margin;
@@ -1589,9 +1589,9 @@
 //@mixin hook-section-overlap() {}
 //@mixin hook-section-misc() {}
 
-//endregion
+//<|
 
-//region   Slidenav
+//|>   Slidenav
 
 //$slidenav-padding-vertical: 5px;
 //$slidenav-padding-horizontal: 10px;
@@ -1616,23 +1616,23 @@
 //@mixin hook-inverse-slidenav-hover(){}
 //@mixin hook-inverse-slidenav-active(){}
 
-//endregion
+//<|
 
-//region   Slider
+//|>   Slider
 
 //@mixin hook-slider() {}
 //@mixin hook-slider-misc() {}
 
-//endregion
+//<|
 
-//region   Slideshow
+//|>   Slideshow
 
 //@mixin hook-slideshow() {}
 //@mixin hook-slideshow-misc() {}
 
-//endregion
+//<|
 
-//region   Sortable
+//|>   Sortable
 
 //$sortable-dragged-z-index: $global-z-index + 50;
 //$sortable-placeholder-opacity: 0;
@@ -1644,9 +1644,9 @@
 //@mixin hook-sortable-empty() {}
 //@mixin hook-sortable-misc() {}
 
-//endregion
+//<|
 
-//region   Spinner
+//|>   Spinner
 
 //$spinner-size: 30px;
 //$spinner-stroke-width: 1;
@@ -1657,9 +1657,9 @@
 //@mixin hook-spinner() {}
 //@mixin hook-spinner-misc() {}
 
-//endregion
+//<|
 
-//region   Sticky
+//|>   Sticky
 
 //$sticky-z-index: $global-z-index - 20;
 //$sticky-animation-duration: 0.2s;
@@ -1667,9 +1667,9 @@
 
 //@mixin hook-sticky-misc() {}
 
-//endregion
+//<|
 
-//region   Subnav
+//|>   Subnav
 
 //$subnav-margin-horizontal: 20px;
 //$subnav-item-color: $global-muted-color;
@@ -1726,9 +1726,9 @@
 //@mixin hook-inverse-subnav-pill-item-active() {}
 //@mixin hook-inverse-subnav-item-disabled() {}
 
-//endregion
+//<|
 
-//region   SVG
+//|>   SVG
 
 //@mixin svg-fill($src, $color-default, $color-new, $property: background-image){
 //
@@ -1743,15 +1743,15 @@
 
 //@mixin hook-svg-misc() {}
 
-//endregion
+//<|
 
-//region   Switcher
+//|>   Switcher
 
 //@mixin hook-switcher-misc() {}
 
-//endregion
+//<|
 
-//region   Tab
+//|>   Tab
 
 //$tab-margin-horizontal: 20px;
 //$tab-item-padding-horizontal: 10px;
@@ -1784,9 +1784,9 @@
 //@mixin hook-inverse-tab-item-active() {}
 //@mixin hook-inverse-tab-item-disabled() {}
 
-//endregion
+//<|
 
-//region   Table
+//|>   Table
 
 //$table-margin-vertical: $global-margin;
 //$table-cell-padding-vertical: 16px;
@@ -1833,9 +1833,9 @@
 //@mixin hook-inverse-table-striped() {}
 //@mixin hook-inverse-table-hover() {}
 
-//endregion
+//<|
 
-//region   Text
+//|>   Text
 
 //$text-lead-font-size: $global-large-font-size;
 //$text-lead-line-height: 1.5;
@@ -1871,9 +1871,9 @@
 //@mixin hook-inverse-text-lead() {}
 //@mixin hook-inverse-text-meta() {}
 
-//endregion
+//<|
 
-//region   Thumbnav
+//|>   Thumbnav
 
 //$thumbnav-margin-horizontal: 15px;
 //$thumbnav-margin-vertical: $thumbnav-margin-horizontal;
@@ -1887,9 +1887,9 @@
 //@mixin hook-inverse-thumbnav-item-hover() {}
 //@mixin hook-inverse-thumbnav-item-active() {}
 
-//endregion
+//<|
 
-//region   Tile
+//|>   Tile
 
 //$tile-padding-horizontal: 15px;
 //$tile-padding-horizontal-s: $global-gutter;
@@ -1916,9 +1916,9 @@
 //@mixin hook-tile-secondary() {}
 //@mixin hook-tile-misc() {}
 
-//endregion
+//<|
 
-//region   Tooltip
+//|>   Tooltip
 
 //$tooltip-z-index: $global-z-index + 30;
 //$tooltip-max-width: 200px;
@@ -1933,9 +1933,9 @@
 //@mixin hook-tooltip() {}
 //@mixin hook-tooltip-misc() {}
 
-//endregion
+//<|
 
-//region   Totop
+//|>   Totop
 
 //$totop-padding: 5px;
 //$totop-color: $global-muted-color;
@@ -1953,9 +1953,9 @@
 //@mixin hook-inverse-totop-hover() {}
 //@mixin hook-inverse-totop-active() {}
 
-//endregion
+//<|
 
-//region   Transition
+//|>   Transition
 
 //$transition-duration: 0.3s;
 //$transition-scale: 1.1;
@@ -1965,22 +1965,22 @@
 
 //@mixin hook-transition-misc() {}
 
-//endregion
+//<|
 
-//region   Utilities
+//|>   Utilities
 
 //$dragover-box-shadow: 0 0 20px rgba(100, 100, 100, 0.3);
 // @mixin hook-utility-misc(){}
 
-//endregion
+//<|
 
-//region   Visibility
+//|>   Visibility
 
 //@mixin hook-visibility-misc() {}
 
-//endregion
+//<|
 
-//region   Width
+//|>   Width
 
 //$width-small-width: 150px;
 //$width-medium-width: 300px;
@@ -1990,4 +1990,4 @@
 
 //@mixin hook-width-misc() {}
 
-//endregion
+//<|
